@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -18308,6 +18308,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="90.17" y1="78.74" x2="90.17" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="I5"/>
 <wire x1="90.17" y1="53.34" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
+<junction x="86.36" y="78.74"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -18413,6 +18414,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="87.63" y1="2.54" x2="85.09" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="85.09" y1="2.54" x2="85.09" y2="1.27" width="0.1524" layer="91"/>
 <junction x="85.09" y="2.54"/>
+<pinref part="IC1" gate="1" pin="(PCINT1/AIN0/ADC1)PA1"/>
+<junction x="73.66" y="66.04"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -18442,7 +18445,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="73.66" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="71.12" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="I6"/>
-<wire x1="96.52" y1="50.8" x2="97.79" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -18453,20 +18455,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="IC1" gate="1" pin="(PCINT2/AIN1/ADC2)PA2"/>
 <wire x1="83.82" y1="55.88" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(PCINT9/XTAL2)PB1"/>
-<wire x1="73.66" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="88.9" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="IC1" gate="1" pin="(PCINT8/XTAL1/CLKI)PB0"/>
-<wire x1="73.66" y1="86.36" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
